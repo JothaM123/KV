@@ -538,10 +538,7 @@ function draw() {
     }
 
     if (gameState == "end") {
-        background(200, 0, 0)
-        textSize(80)
-        fill(0)
-        text("GAME OVER  ", (width / 2 - 200), height / 2)
+        background(gameovr)
         player.visible = false
         cdsG.destroyEach()
         coinsGroup.destroyEach()
